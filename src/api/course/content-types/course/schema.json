@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "singularName": "course",
+    "pluralName": "courses",
+    "displayName": "Course"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "lesson": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "featured": {
+      "type": "boolean"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "isFree": {
+      "type": "boolean"
+    },
+    "tag": {
+      "type": "string"
+    },
+    "skillLevel": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "insName": {
+      "type": "string"
+    },
+    "imageUrl": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
