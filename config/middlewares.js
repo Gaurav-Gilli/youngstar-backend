@@ -14,9 +14,10 @@ module.exports = [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          'connect-src': ["'self'", 'http:', 'https:'],
+          'connect-src': ["'self'", 'http:', 'https:', "https://youngstar-backend.onrender.com"],
+          "script-src":["'self'", 'http:', 'https:', "https://youngstar-backend.onrender.com"],
           upgradeInsecureRequests: null,
-        },
+        }
       },
     },
   },
