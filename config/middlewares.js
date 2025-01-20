@@ -6,8 +6,8 @@ module.exports = [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          "connect-src": ["'self'", "https:", "wss://youngstar-backend.onrender.com"],
-          "script-src": ["'self'", "'unsafe-inline'", "https://youngstar-backend.onrender.com"],
+          "connect-src": ["'self'", "https:", "wss://youngstar-backend.onrender.com", "wss://youngstar-backend.onrender.com:5173"],
+          "script-src": ["'self'", "'unsafe-inline'", "https://your-strapi-domain"],
           "img-src": [
             "'self'",
             "data:",
