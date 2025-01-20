@@ -1,20 +1,19 @@
 module.exports = [
   "strapi::errors",
-  /* Beginning of snippet */
   {
     name: "strapi::security",
     config: {
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          "connect-src": ["'self'", "https:"],
+          "connect-src": ["'self'", "https:", "wss://youngstar-backend.onrender.com"],
           "img-src": [
             "'self'",
             "data:",
             "blob:",
             "dl.airtable.com",
-            "https://youngstar-backend.onrender.com",
             "youngstar-backend.onrender.com",
+            "https://youngstar-backend.onrender.com",
             "s3.ap-south-1.amazonaws.com",
             "market-assets.strapi.io",
           ],
@@ -23,6 +22,8 @@ module.exports = [
             "data:",
             "blob:",
             "dl.airtable.com",
+            "youngstar-backend.onrender.com",
+            "https://youngstar-backend.onrender.com",
             "skoliko.s3.ap-south-1.amazonaws.com",
             "s3.ap-south-1.amazonaws.com",
             "market-assets.strapi.io",
@@ -32,7 +33,6 @@ module.exports = [
       },
     },
   },
-  /* End of snippet */
   "strapi::cors",
   "strapi::poweredBy",
   "strapi::logger",
