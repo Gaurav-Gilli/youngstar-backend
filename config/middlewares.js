@@ -7,6 +7,7 @@ module.exports = [
         useDefaults: true,
         directives: {
           "connect-src": ["'self'", "https:", "wss://youngstar-backend.onrender.com"],
+          "script-src": ["'self'", "'unsafe-inline'", "https://youngstar-backend.onrender.com"],
           "img-src": [
             "'self'",
             "data:",
